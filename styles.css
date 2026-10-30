@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", Arial, sans-serif;
+  background: #f6f7fb;
+  color: #222;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 10;
+}
+
+.nav-inner {
+  max-width: 1100px;
+  margin: auto;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 44px;     display: block;
+}
+
+.lucide {
+  flex-shrink: 0;
+  color: #555;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 15px;
+  color: #333;
+}
+
+.menu > a:hover,
+.courses-link:hover {
+  color: #1f6fe5;
+}
+
+.btn {
+  background: #1f6fe5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.btn a {
+  color: white;
+}
+
+.courses {
+  height: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 1050px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+}
+
+.courses:hover .dropdown {
+  display: block;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 100%;
+  height: 12px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 28px 30px;
+  border-bottom: 1px solid #e8e8ee;
+}
+
+.col h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+.col a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+  color: #444;
+  padding: 10px 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.col a:hover {
+  color: #1f6fe5;
+}
+
+.top-courses {
+  padding: 24px 30px;
+}
+
+.top-courses h4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  margin-bottom: 14px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card {
+  border: 1px solid #e3e3ea;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.card .text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+
+
+.circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #1f6fe5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.circle .lucide {
+  color: #fff;
+}
+
+.card small {
+  color: #888;
+}
+
+.card:hover {
+  border-color: #1f6fe5;
+}
+
+.see-all {
+  display: block;
+  text-align: center;
+  padding: 18px;
+  color: #1f6fe5;
+  font-size: 14px;
+  border-top: 1px solid #e8e8ee;
+}
+
+.hero {
+ 
+  text-align: center;
+  padding: 90px 20px 120px;
+  background: #f6f7fb;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  color: #1f6fe5;
+}
+
+.hero p {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #666;
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.section-btn{
+  display: block;
+  align-items: center;
+  padding: 20px ;
+  margin: 10px;
+}
+.smit-logo{
+  height: 40px;
+  width: 160px;
+  margin: 20px;
+
+}
+.btn-2{
+  background: #f6f7fb;
+  color: #666;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-weight: 600;
+  border:solid 1px #666;
+}
+.card1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.card1 img{
+    height: 150px;
+    width: 150px;
+}
+.card2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    
+}
+.card2 img{
+    height: 150px;
+    width: 150px;
+}
+@media and screen(max-width 12px) {
+    
+}
